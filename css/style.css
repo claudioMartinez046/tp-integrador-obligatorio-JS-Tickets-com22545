@@ -1,0 +1,107 @@
+.flex-container{
+    /* display: flex; */
+    overflow: hidden;
+    /* padding: 20px 10px; */
+    background-color:#353A40;
+}
+.flex-container div{
+color: white;
+/* margin: 10px;*/
+padding-left: 90px;
+font-size: 18px;
+font-family: verdana, Arial, Helvetica, sans-serif;
+}
+.a-la-derecha{
+  float: right;
+  font-size: 18px;
+  padding-top: 22px;
+  padding-right: 90px;
+  
+  
+}
+.logo{
+  float: left;
+  height: 30%;
+  text-align: center;
+  
+}
+.cac{
+   height: 80px;
+}
+
+img.ba1{
+  filter: brightness(0.5);
+}
+
+nav a:hover {
+  color: white;
+  text-decoration:none;    
+}
+nav a{
+  padding:14px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: #848685;
+  text-decoration: none;
+}
+#buy-green{
+    color: #2D9B45;
+}
+a#buy-green:hover {
+    
+    /*color:rgb(81, 131, 16) ; rgba(43,165,70,255) #96c93e*/
+    color: #76ce53; 
+}
+
+footer{
+  /* background-color: #1C5170; */
+  background-image: linear-gradient(to right, #1C3949 , #1F5271);
+  color: white;
+  padding-bottom: 25px;
+}
+/* footer */
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.grid-container a{
+  color: white;
+  text-decoration: none;
+}
+#oradores{
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+.fondo-octubre{
+  background-color: rgba(53,58,64,255);
+}
+
+.btn-color{
+  background-color: #76ce53 !important;
+  color: white; 
+}
+button.btn-color:hover{
+  background-color: rgb(81, 131, 16) !important;
+}
+
+.centrar-est{
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
+/* ccs de tickets */
+#fondoazul{
+  background-color: #CCE5FF;
+}
+/*  */
