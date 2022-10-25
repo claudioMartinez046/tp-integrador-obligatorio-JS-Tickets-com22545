@@ -1,4 +1,8 @@
 //event.preventDefault();// con esta funcion desactivo el default de los botones ej el submit lo que hace  es que solo haga los que nosotros le decimos xq al estar activado hace un error dentro del form
+function msjErrores(){ // ver
+    alert('Debe completar cantidad y categoria para realizar la compra');
+    totalPagar = document.getElementById('fondoazul').value ="Total a pagar: $"
+}
 
 function mostrar(event) {
     event.preventDefault()
@@ -18,10 +22,18 @@ switch (categoria) {
         break;
 
     default:
-        alert('Debe elegir una categoria para realizar la compra');
+        alert('Debe completar cantidad y categoria para realizar la compra');
         totalPagar = document.getElementById('fondoazul').value ="Total a pagar: $"
         break;
 }
+
+//(expresion logica) ? valor_true : valor_false
+
+if(isNaN(cantidad) ){
+    alert('Debe completar cantidad y categoria para realizar la compra');
+    totalPagar = document.getElementById('fondoazul').value ="Total a pagar: $"
+}
+
 total = cantidad * pCategoria;
 const totalPagar = document.getElementById('fondoazul').value ="Total a pagar: $" + total;
 
@@ -29,12 +41,7 @@ const totalPagar = document.getElementById('fondoazul').value ="Total a pagar: $
 
 //defincion de botones y inout
 const btn_resumen = document.getElementById('btn_resumen');
-
-// var categoria = document.getElementById('categoria').value;
-// var cantidad = parseInt(document.getElementById('cantidad').value);
-
 //ejecuciones
-// btn_resumen.onClick = mostrar;
 btn_resumen.addEventListener('click', mostrar);
 
 
