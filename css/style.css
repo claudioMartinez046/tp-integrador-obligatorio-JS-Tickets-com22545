@@ -40,7 +40,7 @@ nav a:hover {
 nav a{
   padding:14px;
 }
-a:link {
+nav a:link {
   color: #848685;
   text-decoration: none;
 }
